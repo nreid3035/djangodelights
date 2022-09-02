@@ -22,7 +22,7 @@ class RecipeRequirement(models.Model):
 
 class Purchase(models.Model):
     total_price = models.IntegerField(default=0)
-    menu_items = models.JSONField()
+    menu_items = models.JSONField() ####### I dont think this is being used properly here
     purchase_time = models.DateTimeField(auto_now=True)
 
 
