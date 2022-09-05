@@ -19,5 +19,7 @@ from inventory import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.landing)
+    path('', views.landing),
+    path('home/', views.home),
+    path('ingredient-list/', views.IngredientListView.as_view(), name='ingredientlist'),
 ]

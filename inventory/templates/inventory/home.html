@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'inventory/base.html' %}
 
 <!-- Make sure to load static here when ready -->
 
@@ -8,4 +8,19 @@
 
 {% block content %}
 <!-- Place <main> content here -->
+    <main>
+        <h2>Home Page</h2>
+        <div class="left-side">
+            <div class="data-container">
+<!--Here there will be data points rendered (from methods) that are relevant to the goals of the company ie: total revenue for the past day, etc -->
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="links-container">
+                <a href="">Add Ingredient</a>
+                <a href="">Add Menu Item</a>
+                <a href="">Add Purchase</a>
+            </div>
+        </div>
+    </main>
 {% endblock %}
