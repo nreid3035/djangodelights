@@ -22,4 +22,6 @@ urlpatterns = [
     path('', views.landing),
     path('home/', views.home),
     path('ingredient-list/', views.IngredientListView.as_view(), name='ingredientlist'),
+    path('menu-list/', views.MenuListView.as_view(), name='menulist'),
+    path('purchase-list/', views.PurchaseListView.as_view(), name='purchaselist'),
 ]

@@ -9,11 +9,11 @@
 {% block content %}
 <main>
     <div class="left-side">
-        <h2>Ingredient List</h2>
+        <h2>Purchase List</h2>
         <div class="list-container">
             <!-- example Ingredient -->
             <div>
-                <h3>Ingredient Name</h3>
+                <h3>Purchase Name</h3>
                 <div class="prop-container">
                     <p>price per unit</p>
                     <p>available quantity</p>
@@ -24,13 +24,12 @@
                     <a>Delete</a>
                 </div>
             </div>
-            {% for ingredient in ingredient_list %}
+            {% for purchase in purchase_list %}
                 <div>
-                    <h3>{{ ingredient.name }}</h3>
+                    <h3>{{ purchase.purchase_time }}</h3>
                     <div>
-                        <p>{{ ingredient.price_per_unit }}/{{ ingredient.unit }}</p>
-                        <p>{{ ingredient.available }}</p>
-                        <p>{{ ingredient.quantity_per_purchase }}</p>
+                        <p>{{ purchase.menu_items }}</p>
+                        <p>{{ purchase.total_price }}</p>
                     </div>
                     <div class="buttons">
                         <a>Edit</a>

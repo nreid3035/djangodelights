@@ -1,0 +1,28 @@
+{% extends 'inventory/base.html' %}
+
+<!-- Load static here when ready -->
+
+{% block blockHead %}
+<!-- Add css link element here when ready -->
+{% endblock %}
+
+{% block content %}
+<main>
+    <div class="left-side">
+        <h2>Menu</h2>
+        <div class="menu-container">
+            {% for menuitem in menu_list %}
+            {{ menuitem.name }}
+            {{ menuitem.menu_price }}
+            {% endfor %}
+        </div>
+    </div>
+    <div class="right-side">
+        <div class="buttons">
+            <a>Add Menu Item</a>
+            <a>Other Link</a>
+            <a>Other Link</a>
+        </div>
+    </div>  
+</main>
+{% endblock %}
