@@ -12,6 +12,10 @@
         <div>
             <!-- Loop through ingredients in this block -->
         </div>
+        <h2>{{ recipe.menu_item }}</h2>
+        {% for item in recipe.ingredient_list %}
+        <p>{{ item }}</p>
+        {% endfor %}
     </div>
     <div class="right-side">
 

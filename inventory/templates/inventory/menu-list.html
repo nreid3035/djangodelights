@@ -14,6 +14,7 @@
             {% for menuitem in menu_list %}
             {{ menuitem.name }}
             {{ menuitem.menu_price }}
+            <a href="{% url 'recipe' pk=menuitem.name %}">Recipe</a>
             {% endfor %}
         </div>
     </div>

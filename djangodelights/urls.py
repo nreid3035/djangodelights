@@ -24,4 +24,5 @@ urlpatterns = [
     path('ingredient-list/', views.IngredientListView.as_view(), name='ingredientlist'),
     path('menu-list/', views.MenuListView.as_view(), name='menulist'),
     path('purchase-list/', views.PurchaseListView.as_view(), name='purchaselist'),
+    path('recipe/<pk>', views.RecipeView.as_view(), name='recipe')
 ]
