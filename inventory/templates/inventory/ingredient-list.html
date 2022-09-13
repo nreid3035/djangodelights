@@ -25,6 +25,7 @@
                 </div>
             </div>
             {% for ingredient in ingredient_list %}
+                <a href="{% url 'ingredient' pk=ingredient.name %}">
                 <div>
                     <h3>{{ ingredient.name }}</h3>
                     <div>
@@ -37,6 +38,7 @@
                         <a>Delete</a>
                     </div>
                 </div>
+                </a>
             {% endfor %}
         </div>
     </div>

@@ -12,7 +12,7 @@
         <h2>Menu</h2>
         <div class="menu-container">
             {% for menuitem in menu_list %}
-            {{ menuitem.name }}
+            <a href="{% url 'menuitem' pk=menuitem.name %}">{{ menuitem.name }}</a>
             {{ menuitem.menu_price }}
             <a href="{% url 'recipe' pk=menuitem.name %}">Recipe</a>
             {% endfor %}

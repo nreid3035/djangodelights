@@ -11,11 +11,14 @@
 </head>
 <body>
   <header>
-    <h1>Django Delights</h1>
+    <a href="{% url 'home' %}">
+      <h1>Django Delights</h1>
+    </a>
+    
     <nav>
-      <a href="">Menu</a>
-      <a href="">Ingredients</a>
-      <a href="">Purchases</a>
+      <a href="{% url 'menulist' %}">Menu</a>
+      <a href="{% url 'ingredientlist' %}">Ingredients</a>
+      <a href="{% url 'purchaselist'%}">Purchases</a>
       <a href="">Account</a>
     </nav>    
   </header>

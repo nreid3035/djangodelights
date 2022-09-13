@@ -19,10 +19,15 @@ from inventory import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.landing),
-    path('home/', views.home),
+    path('', views.landing, name='landing'),
+    path('home/', views.home, name='home'),
+    path('account/', views.account, name='account'),
     path('ingredient-list/', views.IngredientListView.as_view(), name='ingredientlist'),
+    path('ingredient/<pk>', views.IngredientView.as_view(), name='ingredient'),
     path('menu-list/', views.MenuListView.as_view(), name='menulist'),
+    path('menu/<pk>', views.MenuView.as_view(), name='menuitem'),
     path('purchase-list/', views.PurchaseListView.as_view(), name='purchaselist'),
+    path('purchase/<pk>', views.PurchaseView.as_view(), name='purchase'),
     path('recipe/<pk>', views.RecipeView.as_view(), name='recipe')
+    
 ]

@@ -25,6 +25,7 @@
                 </div>
             </div>
             {% for purchase in purchase_list %}
+                <a href="{% url 'purchase' pk=purchase.id %}">
                 <div>
                     <h3>{{ purchase.purchase_time }}</h3>
                     <div>
@@ -36,6 +37,7 @@
                         <a>Delete</a>
                     </div>
                 </div>
+                </a>
             {% endfor %}
         </div>
     </div>
