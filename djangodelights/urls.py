@@ -23,11 +23,15 @@ urlpatterns = [
     path('home/', views.home, name='home'),
     path('account/', views.account, name='account'),
     path('ingredient-list/', views.IngredientListView.as_view(), name='ingredientlist'),
+    path('ingredient/create', views.IngredientCreateView.as_view(), name='ingredientcreate'),
     path('ingredient/<pk>', views.IngredientView.as_view(), name='ingredient'),
     path('menu-list/', views.MenuListView.as_view(), name='menulist'),
+    path('menu/create', views.MenuCreateView.as_view(), name='menucreate'),
     path('menu/<pk>', views.MenuView.as_view(), name='menuitem'),
     path('purchase-list/', views.PurchaseListView.as_view(), name='purchaselist'),
+    path('purchase/create', views.PurchaseCreateView.as_view(), name='purchasecreate'),
     path('purchase/<pk>', views.PurchaseView.as_view(), name='purchase'),
+    path('recipe/create', views.RecipeCreateView.as_view(), name='recipecreate'),
     path('recipe/<pk>', views.RecipeView.as_view(), name='recipe')
     
 ]

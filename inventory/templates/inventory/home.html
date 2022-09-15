@@ -17,9 +17,10 @@
         </div>
         <div class="right-side">
             <div class="links-container">
-                <a href="">Add Ingredient</a>
-                <a href="">Add Menu Item</a>
-                <a href="">Add Purchase</a>
+                <a href="{% url 'ingredientcreate'%}">Add Ingredient</a>
+                <a href="{% url 'menucreate' %}">Add Menu Item</a>
+                <a href="{% url 'recipecreate'%}">Add Recipe</a>
+                <a href="{% url 'purchasecreate'%}">Add Purchase</a>
             </div>
         </div>
     </main>
